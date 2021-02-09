@@ -1,7 +1,9 @@
 ## Fathi_portfolio
 Data Mining final project as a junior data scientist.
 
-# Final Project: Movie Recommender System (Project Overview)
+# Final Project: Movie Recommender System 
+
+## Overview
 * Created a tool that recommend a several movies based on 1 movie title with same characteristics. 
 * Understanding the dataset.
 * Cleaning data from the movie raw dataset using Phyton, Excel, and PowerBi.
@@ -84,9 +86,11 @@ Based on the dataset we decided to create a question to guided us in doing explo
 ## Result 
 
 ## Data Product
-![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg) 
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
 
-![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg) 
+The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Both systems are developed using spider software after coding in phyton using colab. 
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-Kmeans.jpeg) 
 
 
 ## Conclusion 
