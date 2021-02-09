@@ -78,7 +78,7 @@ Based on the dataset we decided to create a question to guided us in doing explo
 * To let the film director to consider their action or idea in making the movies.
 
 ## Exploratory Data Analysis (EDA)
-![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/dashboard.JPG)
 
 
 
@@ -87,7 +87,7 @@ Based on the dataset we decided to create a question to guided us in doing explo
 ## Predictive (K-Nearest Neighbour)
 
 ## Result 
-![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/result%20experiment.JPG)
 
 ## Data Product
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
