@@ -78,8 +78,23 @@ Based on the dataset we decided to create a question to guided us in doing explo
 * To let the film director to consider their action or idea in making the movies.
 
 ## Exploratory Data Analysis (EDA)
+We looked at the data and came up with this dashboard as it based on our stakeholders to maximize the data and easy to understand for their own benefits. Below are the several graphs and table that we transform it in dashboard for easy understanding.
+
+
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/dashboard.JPG)
 
+
+#### 1) Top Rated Movie From Top 5 Genre per Year (1995-2018) [Stacked Bar Graph]
+
+
+#### 2) Percentage of Genre From 1995 to 2018 [Donut Graph]
+
+
+#### 3) Top Rating Animation Movie [Table]
+
+
+#### 4) Most Frequent Word Used in Movie Title [Bar Graph]
+Attribute used: title; For this bar graph we are exploring which 
 
 
 ## Descriptive (K-Means)
@@ -87,6 +102,7 @@ Based on the dataset we decided to create a question to guided us in doing explo
 ## Predictive (K-Nearest Neighbour)
 
 ## Result 
+
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/result%20experiment.JPG)
 
 ## Data Product
@@ -98,7 +114,7 @@ The user will enter the movie title and then press the button 'Recommend', the s
 
 
 ## Conclusion 
-Finally, it may be concluded Rapid Miner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. Rapid Miner has a website of hundreds of machine learning algorithms and functions. Rapid Miner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
+Finally, it may be concluded Rapid Miner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. RapidMiner has a website of hundreds of machine learning algorithms and functions. Rapid Miner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
 
 Building a data mining model using Python is challenging because every process that we want to use either exists in the module or needs to be built. The codes used in this assignment have limited configuration or tuning that can be done to increase the accuracy of each model. However, we managed to conduct training and testing using the dataset we chose. The use of Python programming and Rapid Miner allows us to analyse a lot of the dataset and then compare the results for both approaches.
 
