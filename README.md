@@ -84,6 +84,10 @@ Based on the dataset we decided to create a question to guided us in doing explo
 ## Result 
 
 ## Data Product
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg) 
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg) 
+
 
 ## Conclusion 
 Finally, it may be concluded Rapid Miner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. Rapid Miner has a website of hundreds of machine learning algorithms and functions. Rapid Miner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
