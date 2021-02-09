@@ -78,17 +78,21 @@ Based on the dataset we decided to create a question to guided us in doing explo
 * To let the film director to consider their action or idea in making the movies.
 
 ## Exploratory Data Analysis (EDA)
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
+
+
 
 ## Descriptive (K-Means)
 
 ## Predictive (K-Nearest Neighbour)
 
 ## Result 
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
 
 ## Data Product
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
 
-The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Both systems are developed using spider software after coding in phyton using colab. 
+The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Insert movieId in the textfield, next click Recommend button it will recommend 10 list of movies that have similarity based on clustering. Both systems are developed using spider software after coding in phyton using colab and both system will listed 10 recommended movies with its movieId and title.
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-Kmeans.jpeg) 
 
