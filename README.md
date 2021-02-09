@@ -77,6 +77,16 @@ Based on the dataset we decided to create a question to guided us in doing explo
 
 ## Exploratory Data Analysis (EDA)
 
+## Descriptive (K-Means)
+
+## Predictive (K-Nearest Neighbour)
+
+## Result 
+
+## Data Product
+
+## Conclusion 
+
 
 
 
