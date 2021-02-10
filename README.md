@@ -46,13 +46,17 @@ We only choose the following data for our problem solving to minimizing the scop
 #### 3) Data reduction 
 The importance of this step is easy to do data exploratory without having trouble dealing with blank space that will not bring any meaning to our dashboard. The activities below executed by using Excel.
 * removed all the movie that have no rating 
-* removed 'blank' in genres
+* removed '(blank)' in genres
 * removed '(no genre listed)' in genres
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/filter%20blank.JPG)
 
 #### 4) Data transformation 
 The importance of this step to ease in plotting the graph, for easy to retrieve insightful information and make it easier for stakeholders to read. Hence, to create a readable dashboard for stakeholders. And also helped us in developing the descriptive data mining solution as we focused on genres data to do clustering using K-means. The activities below executed by using Excel.
 * splited the genres into several binomial attributes 
 * eg. genres consist of (Adventure|Animation|Children|Comedy|Fantasy), we split it into multiple column where if its true is '1', false is '0'
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20transform.JPG)
 
 ## Problem Statement & Stakeholders 
 ### Stakeholders
