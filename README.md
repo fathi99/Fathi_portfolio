@@ -15,6 +15,7 @@ Movie Recommendation System is a program to predict or suggest a list of movie f
 
 ## Dataset 
 We are using two dataset which are movies.csv and ratings.csv. This dataset describes 5-star rating from MovieLens, a movie recommendation service. It contains 100836 ratings across 9742 movies. These data were created by 610 users between March 29, 1996 and September 24, 2018. This dataset was generated on September 26, 2018. We got the following: 
+
 **movies.csv**
 * movieId     -> movie unic identification number 
 * title       -> movie title eg. Toy Story
@@ -33,7 +34,7 @@ After scrapping the data, we needed to clean it up so that it was usable for our
 
 **1) Merged two datasets** 
 
-Merged movies.csv and ratings.csv into movieRating.csv dataset using RapidMiner. It is easy for us to used it for data analysis.
+Merged movies.csv and ratings.csv into movieRating.xlsx dataset using RapidMiner. It is easy for us to used it for data analysis.
 * join them with 'movieId'
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/merge%20dataset_RapidMiner.jpeg)
