@@ -3,6 +3,8 @@ Data Mining final project semester as a junior data scientist.
 
 # Final Project: Movie Recommender System 
 
+[Click here to access full in GitHub](https://github.com/fathi99/Fathi_portfolio)
+
 ## Overview
 * Created a tool that recommend a several movies based on 1 movie title with same characteristics. 
 * Understanding the dataset.
