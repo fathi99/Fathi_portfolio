@@ -1,5 +1,5 @@
 ## Fathi_portfolio
-Data Mining final project as a junior data scientist.
+Data Mining final project semester as a junior data scientist.
 
 # Final Project: Movie Recommender System 
 
@@ -59,9 +59,11 @@ The importance of this step to ease in plotting the graph, for easy to retrieve 
 This project we are focusing on several stakeholder which are:
 #### 1) Film Director 
 * a person who determines the feature film, television show, short film or other production. They have complete control of a project.
-#### 2) Cinema owner 
+#### 2) Film Producer
+* a person who oversees the film production, typically manages the logistics and business operations.
+#### 3) Cinema Owner 
 * a person who own a cinema.
-#### 3) Moviegoers 
+#### 4) Moviegoers 
 * a person who goes to cinema, especially on a regular basis.
 
 ### Problem statement
@@ -78,42 +80,84 @@ Based on the dataset we decided to create a question to guided us in doing explo
 * To let the film director to consider their action or idea in making the movies.
 
 ## Exploratory Data Analysis (EDA)
-We looked at the data and came up with this dashboard as it based on our stakeholders to maximize the data and easy to understand for their own benefits. Below are the several graphs and table that we transform it in dashboard for easy understanding.
+We looked at the data and came up with this dashboard as it based on our stakeholders to maximize the data and easy to understand for their own benefits. Below are the several graphs and table that we transform it in dashboard for easy understanding. The most important why we build this dashboard is to increase our stakeholder revenue.
 
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/dashboard.JPG)
 
 
 #### 1) Top Rated Movie From Top 5 Genre per Year (1995-2018) [Stacked Bar Graph]
-
+Attribute: genres, rating, year; For this stacked bar graph we can observed that which top 5 movie genres that have been produced have the higher rating from 1995-2018. We observed that drama and comedy have a higher rating compare to 3 others action, romance and thriller. With this observation film director or producer can produced more movies based on drama and comedy, maybe also can combine the genres and make it into drama comedy movies. The movie will definitely gone hit in the market. Besides, cinema owner can do an advertisement on movie that based on drama and comedy, it will help increase in revenue. 
 
 #### 2) Percentage of Genre From 1995 to 2018 [Donut Graph]
-
+Attribute used: genres, year; For this donut graph we can observed which are the most movie genres produced from 1995-2018, so that we can see the trend what kind of movies that people want to watch, producer can invest on making movies based on the top movie genres produced which are Drama, Comedy and Action.
 
 #### 3) Top Rating Animation Movie [Table]
-
+Attribute used: title, rating, genres; For this table we can see the top rating animation movies that have potential to recreate into live-action adaptation. It will have higher possibilities that the live-action adaptation movie based on top animation will get a hit and increase the revenue for the stakeholders. Besides, cinema owner can consider what animation movie to invest their merchandise on (mug, t-shirt, figure) to create more profit.
 
 #### 4) Most Frequent Word Used in Movie Title [Bar Graph]
-Attribute used: title; For this bar graph we are exploring which 
+Attribute used: title; For this bar graph we are exploring the most frequent word used in movie title which can help the film director to generate title for their new upcoming movies. For example, if the director decide to continue its movie series it can add '2' in the title eg. Toy Story, Toy Story 2. 
 
 
-## Descriptive (K-Means)
+## Methodology 
+### Descriptive (K-means)
+The k-means clustering is a method of vector quantization, originally from processing that aims to partition 'n' observations into k-clusters in which each observation belongs to the cluster with the nearest mean(cluster centers or cluster centroid), serving as a prototype of the clister. K-means clustering minimizes within-clustering variances (squared Euclidean distances, but not regular Euclidean distances. In this project we build and testing the model using RapidMiner and Phyton.
+#### RapidMiner
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmeans_design_model.JPG)
 
-## Predictive (K-Nearest Neighbour)
+#### Phyton
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmean_phyton.JPG)
+
+### Predictive (K-Nearest Neighbour)
+The k-nearest neighbors algorithm is a supervised classification algorithm. It takes a bunch of labeled points and uses them to learn how to label other points. To label a new point, it looks at the labeled points closest to that new point which are its nearest neighbors, and has those neighbors vote.
+#### RapidMiner
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/knn_design_model.JPG)
+
+#### Phyton
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/knn_phyton.JPG)
+
+
+## Experiment Setting
 
 ## Result 
+After conducting the experiment above we have observed and create a result table like below.
+
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/result%20experiment.JPG)
 
+
+In phyton, we used accuracy(%) to measured the performance of the model when we do the split data training and testing. Higher performance accuracy indicate that the model is good for the dataset and  we can observed that overall the Manhattan distance have the higher performance accuracy. In RapidMiner used Root Mean Square Error(RMSE) (+/-) to measured the performance of the model when we do the split data training and testing. Lower in RMSE indicate that the model is good for the dataset and we can observed that overall the Euclidean distance have the lower RMSE, but not big in different with the Manhattan distance.  
+
+We used the same design models to apply to all the predictive models in RapidMiner and Phyton. Although we applied the same design, they have different preprocessing and data selection methods. Some models when we select more attributes as a target it will increase the accuracy of the model, and some are not. For example we will tune the 0.7:0.3 models for each of the predictive models the accuracy reaches above 80%, then we apply the design models for ratio 0.5:0.5 and 0.3:0.7. We have observed the accuracy will decrease based on their training and testing ratio. The higher the training ratio, the more accurate the models will become when doing the testing. This is because we feed the models with more dataset to observe and develop (training) the models. Noted that we used the same tuning model and design model for the different training and testing ratio. Therefore we can say if we feed the models with 100% of the dataset to do the training for developing the models, the accuracy will be higher than the 70% training models in testing. Next, below are the result for k-means, we did not do any comparing as it not meant to find accuracy or RMSE. 
+
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/k-means%20graph.JPG)
+
+
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/clustering%20kmeans.JPG)
+
+
+
+
+In conclusion, we decided to use K-nearest neighbour with Manhattan distance to our product tool which is Movie Recommender System and we also develop with k-means algorithm for our product tool.
+
+
+
 ## Data Product
+
+
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
+
 
 The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Insert movieId in the textfield, next click Recommend button it will recommend 10 list of movies that have similarity based on clustering. Both systems are developed using spider software after coding in phyton using colab and both system will listed 10 recommended movies with its movieId and title.
 
+
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-Kmeans.jpeg) 
 
+## Conclusion
+Machine learning is a method of data analysis that automates analytical model building. It is a branch of artiﬁcial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention. In this proposed system a movie recommendation system is built using the K-Means Clustering and K-Nearest Neighbor algorithms. The data are taken from movieLens dataset. The system is implemented in the Python programming language and rapidminer. It is seen that after implementing the system in the python programming language the accuracy value for the manhattan technique is better than the cosine and euclidean technique. For the rapidminer has a low root mean square error. The proposed work can be improved using more datasets. The sentimental analysis concept can be used in the future to enhance the efﬁciency of the movie recommendation system, so the model can be tuned to accommodate more situations.
 
-## Conclusion 
+## Reflection
 Finally, it may be concluded Rapid Miner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. RapidMiner has a website of hundreds of machine learning algorithms and functions. Rapid Miner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
 
 Building a data mining model using Python is challenging because every process that we want to use either exists in the module or needs to be built. The codes used in this assignment have limited configuration or tuning that can be done to increase the accuracy of each model. However, we managed to conduct training and testing using the dataset we chose. The use of Python programming and Rapid Miner allows us to analyse a lot of the dataset and then compare the results for both approaches.
