@@ -6,8 +6,8 @@ Data Mining final project semester as a junior data scientist.
 ## Overview
 * Created a tool that recommend a several movies based on 1 movie title with same characteristics. 
 * Understanding the dataset.
-* Cleaning data from the movie raw dataset using Phyton, Excel, and PowerBi.
-* Optimized K-Nearest Neighbour(KNN) with a different metric (Manhattan distance, Euclidean distance and Cosine similarity) using RapidMiner and Phyton to reach the best model for  predictive data mining solution and used K-means for descriptive data mining solution. 
+* Cleaning data from the movie raw dataset using Python, Excel, and PowerBi.
+* Optimized K-Nearest Neighbour(KNN) with a different metric (Manhattan distance, Euclidean distance and Cosine similarity) using RapidMiner and Python to reach the best model for  predictive data mining solution and used K-means for descriptive data mining solution. 
 * Built the interface of Movie Recommender System using Spider.
 
 ## Introduction
@@ -35,8 +35,10 @@ After scrapping the data, we needed to clean it up so that it was usable for our
 Merged movies.csv and ratings.csv into movieRating.csv dataset using RapidMiner. It is easy for us to used it for data analysis.
 * join them with 'movieId'
 
+![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/merge%20dataset_RapidMiner.jpeg)
+
 #### 2) Data selection
-We only choose the following data for our problem solving to minimizing the scope using RapidMiner and Phyton.
+We only choose the following data for our problem solving to minimizing the scope using RapidMiner and Python.
 * movieId
 * genres
 * title
@@ -105,7 +107,7 @@ Attribute used: title; For this bar graph we are exploring the most frequent wor
 
 ## Methodology 
 ### Descriptive (K-means)
-The k-means clustering is a method of vector quantization, originally from processing that aims to partition 'n' observations into k-clusters in which each observation belongs to the cluster with the nearest mean(cluster centers or cluster centroid), serving as a prototype of the clister. K-means clustering minimizes within-clustering variances (squared Euclidean distances, but not regular Euclidean distances. In this project we build and testing the model using RapidMiner and Phyton.
+The k-means clustering is a method of vector quantization, originally from processing that aims to partition 'n' observations into k-clusters in which each observation belongs to the cluster with the nearest mean(cluster centers or cluster centroid), serving as a prototype of the clister. K-means clustering minimizes within-clustering variances (squared Euclidean distances, but not regular Euclidean distances. In this project we build and testing the model using RapidMiner and Python.
 #### RapidMiner
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmeans_design_model.JPG)
 * #### Read excel
@@ -128,7 +130,7 @@ The descriptive model operator (k-means) set k = 18.
 This operator is used for statistical performance evaluation of classification tasks. This operator
 delivers a list of performance criteria values of the classification task.
 
-#### Phyton
+#### Python
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmean_phyton.JPG)
 * #### Merge dataset 
 
@@ -175,7 +177,7 @@ This Operator applies a model on an ExampleSet.
 * #### Performance
 
 This operator is used for performance evaluation. It delivers a list of performance criteria values. These performance criteria are automatically determined in order to fit the learning task type.
-#### Phyton
+#### Python
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/knn_phyton.JPG)
 * #### Merge dataset 
 
@@ -194,6 +196,23 @@ User enter the movie id and the system will recommend the top 10 movies.
 Fix any bug or error in the coding if any.
 
 ## Experiment Setting
+Experiment setting conducted based on Python programming and Rapidminer. The approach used for this experiment is training ratio and test ratio which uses a value of 70:30, 50:50, 30:70. The main focus of this experiment is to measure the accuracy and root mean square error obtained before the tuning is carried out and after. We measure accuracy using different metrics which is:
+
+* Cosine similarity 
+
+It is a metric, helpful in determining, how similar the data objects are irrespective of their size. We can measure the similarity between two sentences in Python using Cosine Similarity. In cosine similarity, data objects in a dataset are treated as a vector. The formula to find the cosine similarity between two vectors is –
+
+Cos(x, y) = x . y / ||x|| * ||y||
+
+* Manhattan distance 
+
+It is a metric in which the distance between two points is the sum of the absolute differences of their Cartesian coordinates. In a simple way of saying it is the total sum of the difference between the x-coordinates and y-coordinates. Manhattan distance = |x1 — x2| + |y1 — y2|.
+
+* Euclidean distance 
+
+It is also known as simply distance. When data is dense or continuous, this is the best proximity measure.
+
+
 
 ## Result 
 After conducting the experiment above we have observed and create a result table like below.
@@ -202,9 +221,9 @@ After conducting the experiment above we have observed and create a result table
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/result%20experiment.JPG)
 
 
-In phyton, we used accuracy(%) to measured the performance of the model when we do the split data training and testing. Higher performance accuracy indicate that the model is good for the dataset and  we can observed that overall the Manhattan distance have the higher performance accuracy. In RapidMiner used Root Mean Square Error(RMSE) (+/-) to measured the performance of the model when we do the split data training and testing. Lower in RMSE indicate that the model is good for the dataset and we can observed that overall the Euclidean distance have the lower RMSE, but not big in different with the Manhattan distance.  
+In python, we used accuracy(%) to measured the performance of the model when we do the split data training and testing. Higher performance accuracy indicate that the model is good for the dataset and  we can observed that overall the Manhattan distance have the higher performance accuracy. In RapidMiner used Root Mean Square Error(RMSE) (+/-) to measured the performance of the model when we do the split data training and testing. Lower in RMSE indicate that the model is good for the dataset and we can observed that overall the Euclidean distance have the lower RMSE, but not big in different with the Manhattan distance.  
 
-We used the same design models to apply to all the predictive models in RapidMiner and Phyton. Although we applied the same design, they have different preprocessing and data selection methods. Some models when we select more attributes as a target it will increase the accuracy of the model, and some are not. For example we will tune the 0.7:0.3 models for each of the predictive models the accuracy reaches above 80%, then we apply the design models for ratio 0.5:0.5 and 0.3:0.7. We have observed the accuracy will decrease based on their training and testing ratio. The higher the training ratio, the more accurate the models will become when doing the testing. This is because we feed the models with more dataset to observe and develop (training) the models. Noted that we used the same tuning model and design model for the different training and testing ratio. Therefore we can say if we feed the models with 100% of the dataset to do the training for developing the models, the accuracy will be higher than the 70% training models in testing. Next, below are the result for k-means, we did not do any comparing as it not meant to find accuracy or RMSE. 
+We used the same design models to apply to all the predictive models in RapidMiner and Python. Although we applied the same design, they have different preprocessing and data selection methods. Some models when we select more attributes as a target it will increase the accuracy of the model, and some are not. For example we will tune the 0.7:0.3 models for each of the predictive models the accuracy reaches above 80%, then we apply the design models for ratio 0.5:0.5 and 0.3:0.7. We have observed the accuracy will decrease based on their training and testing ratio. The higher the training ratio, the more accurate the models will become when doing the testing. This is because we feed the models with more dataset to observe and develop (training) the models. Noted that we used the same tuning model and design model for the different training and testing ratio. Therefore we can say if we feed the models with 100% of the dataset to do the training for developing the models, the accuracy will be higher than the 70% training models in testing. Next, below are the result for k-means, we did not do any comparing as it not meant to find accuracy or RMSE. 
 
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/k-means%20graph.JPG)
@@ -225,7 +244,7 @@ In conclusion, we decided to use K-nearest neighbour with Manhattan distance to 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-KNN.jpeg)
 
 
-The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Insert movieId in the textfield, next click Recommend button it will recommend 10 list of movies that have similarity based on clustering. Both systems are developed using spider software after coding in phyton using colab and both system will listed 10 recommended movies with its movieId and title.
+The user will enter the movie title and then press the button 'Recommend', the system will recommend 10 list of movies that have similarity. Noted that we are using Manhattan distance for our Movie Recommendation System as we have discuss in result and analysis previously. And below is system that we built based on K-means algorithm that cluster the movie based on genres and ratings. Insert movieId in the textfield, next click Recommend button it will recommend 10 list of movies that have similarity based on clustering. Both systems are developed using spider software after coding in python using colab and both system will listed 10 recommended movies with its movieId and title.
 
 
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/data%20product-Kmeans.jpeg) 
@@ -234,7 +253,7 @@ The user will enter the movie title and then press the button 'Recommend', the s
 Machine learning is a method of data analysis that automates analytical model building. It is a branch of artiﬁcial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention. In this proposed system a movie recommendation system is built using the K-Means Clustering and K-Nearest Neighbor algorithms. The data are taken from movieLens dataset. The system is implemented in the Python programming language and rapidminer. It is seen that after implementing the system in the python programming language the accuracy value for the manhattan technique is better than the cosine and euclidean technique. For the rapidminer has a low root mean square error. The proposed work can be improved using more datasets. The sentimental analysis concept can be used in the future to enhance the efﬁciency of the movie recommendation system, so the model can be tuned to accommodate more situations.
 
 ## Reflection
-Finally, it may be concluded Rapid Miner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. RapidMiner has a website of hundreds of machine learning algorithms and functions. Rapid Miner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
+Finally, it may be concluded RapidMiner offers a rich range of Machine Learning algorithms for data mining activities, along with a robust set of operators (functions) for pre-processing data. RapidMiner has a website of hundreds of machine learning algorithms and functions. RapidMiner is simple to use because RapidMiner is an easy-to-use visual workflow designer program. We design models to ensure that the precision of each model is capable of achieving the desired standard. It is also simple to set the parameters for each degree of operation and the ratio for each model. 
 
 Building a data mining model using Python is challenging because every process that we want to use either exists in the module or needs to be built. The codes used in this assignment have limited configuration or tuning that can be done to increase the accuracy of each model. However, we managed to conduct training and testing using the dataset we chose. The use of Python programming and Rapid Miner allows us to analyse a lot of the dataset and then compare the results for both approaches.
 
