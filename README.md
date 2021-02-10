@@ -104,18 +104,90 @@ Attribute used: title; For this bar graph we are exploring the most frequent wor
 The k-means clustering is a method of vector quantization, originally from processing that aims to partition 'n' observations into k-clusters in which each observation belongs to the cluster with the nearest mean(cluster centers or cluster centroid), serving as a prototype of the clister. K-means clustering minimizes within-clustering variances (squared Euclidean distances, but not regular Euclidean distances. In this project we build and testing the model using RapidMiner and Phyton.
 #### RapidMiner
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmeans_design_model.JPG)
+* #### Read excel
+
+Read a dataset that has been pre-processing as we mention before in Data Cleaning.
+* #### Select attribute
+
+We selected targeted attributes and labels for the model to predict, for this case for the k-means to cluster. We are using it for tuning the models to increase the accuracy, sometimes we target more than 3 attributes to assist the prediction. But most of the time we chose the one that we thinkreally will impact the most. 
+* #### Filter examples
+
+We applied the targeted attribute equals to “not missing” as we want to ease our models without needto find or predict the missing data. If not get rid of the missing value sometimes it will count as ‘blank’ and that will affect the prediction models.
+* #### Normalize
+
+This Operator normalizes the values of the selected Attributes. Normalization is used to scale values so they fit in a specific range. Adjusting the value range is very important when dealing with Attributes of different units and scales.
+* #### Clustering
+
+The descriptive model operator (k-means) set k = 18.
+* #### Performance
+
+This operator is used for statistical performance evaluation of classification tasks. This operator
+delivers a list of performance criteria values of the classification task.
 
 #### Phyton
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/kmean_phyton.JPG)
+* #### Merge dataset 
+
+We merged dataset from movies.csv and ratings.csv into 1 dataset.
+* #### Apply pre-processing 
+
+Remove all the null values and split the genre into a simple form.
+* #### Apply k-means algorithm
+
+clustering k = 18.
+* #### Run code
+
+User enter the movie id and the system will recommend the top 10 movies.
+* #### Debug
+
+Fix any bug or error in the coding if any.
 
 ### Predictive (K-Nearest Neighbour)
 The k-nearest neighbors algorithm is a supervised classification algorithm. It takes a bunch of labeled points and uses them to learn how to label other points. To label a new point, it looks at the labeled points closest to that new point which are its nearest neighbors, and has those neighbors vote.
 #### RapidMiner
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/knn_design_model.JPG)
+* #### Read excel
 
+Read a dataset that has been pre-processing as we mention before in Data Cleaning.
+* #### Select attribute
+
+We selected targeted attributes and labels for the model to predict, for this case for the k-means to cluster. We are using it for tuning the models to increase the accuracy, sometimes we target more than 3 attributes to assist the prediction. But most of the time we chose the one that we thinkreally will impact the most. 
+* #### Set role
+
+We set 'rating' as labels. Because 'rating' we want to look at and predict. 
+* #### Split data
+
+We splitted the data for training and testing the models to: 
+* Training 70%, testing 30%. 
+* Training 50%, testing 50%. 
+* Training 30%, testing 70%. 
+
+* #### K-Nearest Neighbour
+
+This Operator generates a k-Nearest Neighbor model, which is used for classification or regression. We measured numerical and its types are Cosine Similarity, Euclidean Distance and Manhattan Distance.
+* #### Apply model
+
+This Operator applies a model on an ExampleSet.
+* #### Performance
+
+This operator is used for performance evaluation. It delivers a list of performance criteria values. These performance criteria are automatically determined in order to fit the learning task type.
 #### Phyton
 ![](https://github.com/fathi99/Fathi_portfolio/blob/main/images/knn_phyton.JPG)
+* #### Merge dataset 
 
+We merged dataset from movies.csv and ratings.csv into 1 dataset.
+* #### Apply pre-processing 
+
+Remove all the null values and split the genre into a simple form.
+* #### Apply k-nn algorithm
+
+Using different metric = Manhattan/ Cosine/ Euclidean. Algorithm = Brute and n_neigbors = 20.
+* #### Run code
+
+User enter the movie id and the system will recommend the top 10 movies.
+* #### Debug
+
+Fix any bug or error in the coding if any.
 
 ## Experiment Setting
 
